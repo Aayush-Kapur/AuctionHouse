@@ -338,7 +338,7 @@ contract AuctionHouse is PausableUpgradeable, ReentrancyGuardUpgradeable, Ownabl
      * contract is unpaused. While no new auctions can be started when paused,
      * anyone can settle an ongoing auction.
      */
-    function pause() external   onlyOwner {
+    function pause() external onlyOwner {
         _pause();
     }
 
